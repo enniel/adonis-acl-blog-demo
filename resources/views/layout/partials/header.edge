@@ -20,9 +20,11 @@
           ref: http://adonisjs.com/docs/4.0/authentication#_loggedin
           --}}
         @loggedIn
+          @is('administrator')
           <li class="nav-item">
             <a class="nav-link" href="/posts/create">Create a post</a>
           </li>
+          @endis
           <li class="nav-item">
             <a class="nav-link" href="/logout">Logout</a>
           </li>

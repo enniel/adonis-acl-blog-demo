@@ -1,4 +1,4 @@
-# Adonis Blog Demo :triangular_ruler:
+# Adonis Blog Demo + Acl System :triangular_ruler:
 
 This repo contains an example application of the Adonis Framework. You must checkout the source code or the API docs on official website to learn more.
 
@@ -15,6 +15,7 @@ This repo contains an example application of the Adonis Framework. You must chec
 3. API Testing
 4. Browser Testing
 5. Assets management
+6. Acl System
 
 ## What's the roadmap?
 
@@ -31,5 +32,6 @@ This repo contains an example application of the Adonis Framework. You must chec
 - Make a copy of `.env.example` rename it to `.env`
 - Run `adonis key:generate` to generate the secret key
 - Run `adonis migration:run` to setup the database
+- Run `adonis seed` to create the administrator
 - Run `npm run build:dev` to build static assets (preferably in another terminal tab/window)
 - Run `adonis serve --dev` to run the application

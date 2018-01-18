@@ -13,18 +13,19 @@
   "private": true,
   "dependencies": {
     "@adonisjs/ace": "^4.0.6",
-    "@adonisjs/auth": "^2.0.10",
+    "@adonisjs/auth": "^2.0.11",
     "@adonisjs/bodyparser": "^1.0.7",
     "@adonisjs/cors": "^1.0.1",
     "@adonisjs/fold": "^4.0.4",
-    "@adonisjs/framework": "^4.0.24",
+    "@adonisjs/framework": "^4.0.30",
     "@adonisjs/ignitor": "^1.0.12",
     "@adonisjs/lucid": "^4.0.21",
     "@adonisjs/session": "^1.0.16",
     "@adonisjs/shield": "^1.0.3",
     "@adonisjs/validator": "^4.0.5",
     "@adonisjs/vow": "^1.0.12",
-    "@adonisjs/vow-browser": "^1.0.4"
+    "@adonisjs/vow-browser": "^1.0.4",
+    "adonis-acl": "^1.1.0"
   },
   "devDependencies": {
     "bootstrap": "^4.0.0-beta.2",

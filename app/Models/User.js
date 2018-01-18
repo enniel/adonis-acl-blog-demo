@@ -15,6 +15,13 @@ class User extends Model {
      */
     this.addHook('beforeCreate', 'User.hashPassword')
   }
+
+  static get traits () {
+    return [
+      '@provider:Adonis/Acl/HasPermission',
+      '@provider:Adonis/Acl/HasRole'
+    ]
+  }
 }
 
 module.exports = User

@@ -22,6 +22,7 @@ const providers = [
   '@adonisjs/vow/providers/VowProvider',
   '@adonisjs/vow-browser/providers/VowBrowserProvider',
   '@adonisjs/validator/providers/ValidatorProvider',
+  'adonis-acl/providers/AclProvider'
 ]
 
 /*
@@ -34,7 +35,8 @@ const providers = [
 |
 */
 const aceProviders = [
-  '@adonisjs/lucid/providers/MigrationsProvider'
+  '@adonisjs/lucid/providers/MigrationsProvider',
+  'adonis-acl/providers/CommandsProvider'
 ]
 
 /*

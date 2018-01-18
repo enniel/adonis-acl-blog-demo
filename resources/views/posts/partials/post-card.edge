@@ -7,20 +7,22 @@
     ref: http://adonisjs.com/docs/4.0/authentication#_loggedin
     --}}
   @loggedIn
-    <div class="card-header d-flex justify-content-end">
-      <ul class="nav nav-pills card-header-pills">
-        <li class="nav-item">
-          <a class="btn btn-dark d-flex align-items-center" href="/posts/{{ post.id }}/edit">
-            @!component('icon.edit', { size: '25px' })
-          </a>
-        </li>
-        <li class="nav-item ml-2">
-          <a class="btn btn-dark d-flex align-items-center trash" href="/posts/{{ post.id }}/delete">
-            @!component('icon.trash', { size: '25px' })
-          </a>
-        </li>
-      </ul>
-    </div>
+    @is('administrator')
+      <div class="card-header d-flex justify-content-end">
+        <ul class="nav nav-pills card-header-pills">
+          <li class="nav-item">
+            <a class="btn btn-dark d-flex align-items-center" href="/posts/{{ post.id }}/edit">
+              @!component('icon.edit', { size: '25px' })
+            </a>
+          </li>
+          <li class="nav-item ml-2">
+            <a class="btn btn-dark d-flex align-items-center trash" href="/posts/{{ post.id }}/delete">
+              @!component('icon.trash', { size: '25px' })
+            </a>
+          </li>
+        </ul>
+      </div>
+    @endis
   @endloggedIn
 
   <div class="card-body">
