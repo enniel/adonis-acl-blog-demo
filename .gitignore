@@ -5,3 +5,4 @@ tmp
 package-lock.json
 database/*.sqlite
 mix-manifest.json
+.DS_Store
